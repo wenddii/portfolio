@@ -78,4 +78,24 @@ ul li { margin:10px 0; }
 .youtube-thumbnail:hover {
     transform: scale(1.03);
 }
+.certificates {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.certificate-thumb {
+    width: 500px;        /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.certificate-thumb:hover {
+    transform: scale(1.05); /* slight zoom on hover */
+}
 
