@@ -3,7 +3,7 @@ import "./Projects.css";
 // Import project screenshots (put images in src/assets/)
 
 import taskmanagerapiImg from "../assets/task_managerapi.png";
-import SadImg from "../assets/Sad.png";
+import SadImg from "../assets/SAD.png";
 import EduRIseImg from "../assets/Edu_rise.jpg";
 import profileImg from "../assets/portfolio.png";
 import javaconsoleImg from "../assets/javaconsole.jpg";
