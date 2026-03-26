@@ -1,0 +1,54 @@
+.contact {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #0f172a, #1e293b); /* dark starry theme */
+  color: white;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.contact-buttons a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 25px;
+  border-radius: 10px;
+  background: #1e293b;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-buttons a span {
+  display: inline-block;
+}
+
+.contact-buttons a:hover {
+  background: #3b82f6; /* glowing blue */
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(59, 130, 246, 0.4);
+}
+
+.contact-buttons a svg {
+  font-size: 1.4rem;
+}

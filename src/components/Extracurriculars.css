@@ -1,0 +1,41 @@
+/* Wrap content to match other sections */
+.extracurriculars .content-wrapper {
+  max-width: 1000px; /* same as Projects */
+  margin: 0 auto; /* centers horizontally */
+  text-align: center; /* centers text and list */
+  padding: 0 20px; /* side padding */
+}
+
+/* List styling */
+.extracurriculars ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.extracurriculars ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/* Images styling */
+.activity-images {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center; /* center the row */
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.activity-images img {
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.activity-images img:hover {
+  transform: scale(1.05);
+}

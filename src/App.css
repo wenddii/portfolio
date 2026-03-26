@@ -1,0 +1,126 @@
+/* Global */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0f172a;
+  color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links a {
+  margin-left: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar .nav-links a:hover {
+  color: #3b82f6;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #94a3b8;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #2563eb;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Projects */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project-card {
+  flex: 1 1 300px;
+  padding: 20px;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+}
+
+.contact button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #2563eb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar .nav-links {
+    margin-top: 10px;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

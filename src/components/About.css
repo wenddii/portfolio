@@ -1,0 +1,19 @@
+.about {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 200px;
+  border-radius: 50%;
+  border: 3px solid #3b82f6;
+}
