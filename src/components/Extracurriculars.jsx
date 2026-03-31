@@ -20,8 +20,7 @@ function Extracurriculars() {
     </ul>
 
     <div className="activity-images">
-      <img src="/alx.jpg" alt="Alx graduate" />
-      <img src="/club1.jpg" alt="Bahirdar university mens basketball team" />
+     <img src="/club1.jpg" alt="Bahirdar university mens basketball team" />
       <img src="/club2.jpg" alt="Batch club" />
 
       <a

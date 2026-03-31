@@ -72,3 +72,14 @@
     max-width: 90%;
   }
 }
+
+.more-projects {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #3b82f6;
+  font-weight: 500;
+
+  /* subtle glow */
+  text-shadow: 0 0 8px rgba(59, 130, 246, 0.6);
+}

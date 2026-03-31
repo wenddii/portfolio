@@ -1,67 +1,124 @@
-/* Navbar container */
+/* RESET */
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  background-color: #0f172a;
-  border-bottom: 1px solid #1e293b;
+
+  padding: 15px 20px;
+  width: 100%;
+  box-sizing: border-box;
+
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
+
+  /* Glass + glow background */
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
 }
 
-/* Logo */
-.navbar .logo {
-  font-size: 1.5rem;
+/* LOGO */
+.logo {
+  color: white;
+  font-size: 1.6rem;
   font-weight: bold;
-  color: #ffffff;
+  letter-spacing: 1px;
+
+  /* glowing text */
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.7);
 }
 
-/* Links container */
-.navbar .nav-links {
+/* NAV LINKS (DESKTOP) */
+.nav-links {
   display: flex;
+  list-style: none;
   gap: 25px;
 }
 
-.navbar .nav-links a {
-  color: #ffffff;
+.nav-links li a {
+  color: white;
   text-decoration: none;
   font-weight: 500;
+  position: relative;
   transition: 0.3s;
 }
 
-.navbar .nav-links a:hover {
+/* Glow hover effect */
+.nav-links li a:hover {
   color: #3b82f6;
+  text-shadow: 0 0 8px #3b82f6;
 }
 
-/* Hamburger (hidden on desktop) */
-.hamburger {
+/* Animated underline glow */
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: #3b82f6;
+  box-shadow: 0 0 8px #3b82f6;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+/* HAMBURGER ICON */
+.menu-icon {
   display: none;
   color: white;
+  font-size: 1.8rem;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-/* Mobile Styles */
+.menu-icon:hover {
+  color: #3b82f6;
+  text-shadow: 0 0 10px #3b82f6;
+}
+
+/* 📱 MOBILE */
 @media (max-width: 768px) {
-  .hamburger {
+  .menu-icon {
     display: block;
   }
 
   .nav-links {
-    position: absolute;
-    top: 70px; /* below navbar */
+    position: fixed;
+    top: 60px;
     right: 0;
-    background-color: #0f172a;
+
+    width: 70%;
+    height: 100vh;
+
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+
     flex-direction: column;
-    width: 200px;
+    align-items: flex-start;
     padding: 20px;
-    gap: 15px;
+
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
   }
 
-  .nav-links.open {
+  .nav-links.active {
     transform: translateX(0);
+  }
+
+  .nav-links li {
+    margin: 15px 0;
   }
 }
