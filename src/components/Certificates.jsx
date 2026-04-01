@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./Certificates.css";
 
 // Import certificate images
-import alxCert from "../assets/web_dev.png";
+import alxCert from "../assets/Web_dev.png";
 import djangoCert from "../assets/proffesional_foundations.png";
 
 function Certificates() {
