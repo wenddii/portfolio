@@ -10,15 +10,6 @@ import ERPImg from "../assets/ERP.jpg";
 function Projects() {
   const projectList = [
     {
-      title: "Java Student Registration System",
-      description:
-        "A java console application that simply registers and grades student scores",
-      tech: "Java",
-      img: javaconsoleImg,
-      github: "https://github.com/wenddii/java_student_management.git",
-    },
-    
-    {
       title: "Complete ERP System",
       description:
         "a complete ERP system made by django,username = abush password = 34412500",
@@ -26,6 +17,7 @@ function Projects() {
       img: ERPImg,
       github: "https://simple-inventory-management-1-gsqc.onrender.com/report-range/?start_date=&end_date=",
     },
+       
     {
       title: "Simple To-Do list tracker",
       description:
@@ -49,6 +41,15 @@ function Projects() {
       github:
         "https://docs.google.com/presentation/d/17NSeV7U4q4EWbXAR91jyDv_hZh-LO1WmfU3ycoNOnlQ/edit",
     },
+    {
+      title: "Java Student Registration System",
+      description:
+        "A java console application that simply registers and grades student scores",
+      tech: "Java",
+      img: javaconsoleImg,
+      github: "https://github.com/wenddii/java_student_management.git",
+    },
+
     
   ];
 
