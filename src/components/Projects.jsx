@@ -5,6 +5,7 @@ import taskmanagerapiImg from "../assets/task_managerapi.png";
 import SadImg from "../assets/SAD.png";
 import EduRIseImg from "../assets/Edu_rise.jpg";
 import javaconsoleImg from "../assets/javaconsole.jpg";
+import ERPImg from "../assets/ERP.jpg";
 
 function Projects() {
   const projectList = [
@@ -16,20 +17,29 @@ function Projects() {
       img: javaconsoleImg,
       github: "https://github.com/wenddii/java_student_management.git",
     },
+    
+    {
+      title: "Complete ERP System",
+      description:
+        "a complete ERP system made by django,username = abush password = 34412500",
+      tech: "Django,PostgreSql",
+      img: ERPImg,
+      github: "https://simple-inventory-management-1-gsqc.onrender.com/report-range/?start_date=&end_date=",
+    },
+    {
+      title: "Simple To-Do list tracker",
+      description:
+        "a simple To-do list tracker made by django",
+      tech: "Django,PostgreSql",
+      img: SadImg,
+      github: "https://simple-todo-1-u0ir.onrender.com/",
+    },
     {
       title: "Task Manager API",
       description: "Task manager API made with Django",
       tech: "Django, DRF, PostgreSQL",
       img: taskmanagerapiImg,
       github: "https://github.com/wenddii/my-api-project.git",
-    },
-    {
-      title: "Food Ordering System Analysis",
-      description:
-        "A system requirements and analysis for a food ordering and delivery system in school",
-      tech: "UML, ERD, DFD",
-      img: SadImg,
-      github: "https://github.com/wenddii/SAD.git",
     },
     {
       title: "EDU_Rise Africa",
@@ -39,6 +49,7 @@ function Projects() {
       github:
         "https://docs.google.com/presentation/d/17NSeV7U4q4EWbXAR91jyDv_hZh-LO1WmfU3ycoNOnlQ/edit",
     },
+    
   ];
 
   return (
@@ -62,7 +73,7 @@ function Projects() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              View Code
+              View Code / live demo
             </a>
           </div>
         ))}
