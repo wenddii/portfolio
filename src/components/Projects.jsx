@@ -4,6 +4,7 @@ import "./Projects.css";
 import taskmanagerapiImg from "../assets/task_managerapi.png";
 import SadImg from "../assets/SAD.png";
 import EduRIseImg from "../assets/Edu_rise.jpg";
+import javaconsoleImg from "../assets/javaconsole.jpg";
 import ERPImg from "../assets/ERP.jpg";
 
 function Projects() {
@@ -40,7 +41,14 @@ function Projects() {
       github:
         "https://docs.google.com/presentation/d/17NSeV7U4q4EWbXAR91jyDv_hZh-LO1WmfU3ycoNOnlQ/edit",
     },
-   
+    {
+      title: "Java Student Registration System",
+      description:
+        "A java console application that simply registers and grades student scores",
+      tech: "Java",
+      img: javaconsoleImg,
+      github: "https://github.com/wenddii/java_student_management.git",
+    },
 
   ];
 
