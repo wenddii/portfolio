@@ -44,9 +44,9 @@
 }
 
 .contact-buttons a:hover {
-  background: #3b82f6; /* glowing blue */
+  background: #22c55e;
   transform: translateY(-3px);
-  box-shadow: 0 8px 15px rgba(59, 130, 246, 0.4);
+  box-shadow: 0 8px 15px rgba(34, 197, 94, 0.4);
 }
 
 .contact-buttons a svg {

@@ -5,7 +5,7 @@
 
 .resume button {
   padding: 10px 20px;
-  background-color: #3b82f6;
+  background-color: #22c55e;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -14,5 +14,5 @@
 }
 
 .resume button:hover {
-  background-color: #2563eb;
+  background-color: #16a34a;
 }

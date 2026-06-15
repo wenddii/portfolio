@@ -1,0 +1,54 @@
+.skills {
+  overflow: hidden;
+}
+
+.skill-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.skill-card h3 {
+  margin-bottom: 0.75rem;
+}
+
+.skill-card p {
+  margin-bottom: 1.3rem;
+}
+
+.skill-list {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.skill-row {
+  display: grid;
+  gap: 0.72rem;
+}
+
+.skill-row-title {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: #f8fafc;
+  font-weight: 600;
+}
+
+.skill-row-title span:last-child {
+  color: var(--muted);
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.progress-bar span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(135deg, #22c55e, #10b981);
+}
