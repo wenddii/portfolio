@@ -16,7 +16,7 @@ const skillGroups = [
     title: "Frontend & polish",
     description: "Modern interfaces and responsive layouts that support product UX.",
     skills: [
-      { name: "React", level: 76 },
+      { name: "React", level: 50 },
       { name: "HTML & CSS", level: 80 },
       { name: "Tailwind / CSS", level: 74 },
       { name: "Responsive design", level: 83 },
