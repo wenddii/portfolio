@@ -5,7 +5,7 @@ const timeline = [
   {
     title: "ALX Software Engineering",
     subtitle: "Program graduate",
-    period: "2024",
+    period: "2025",
     details: [
       "Built production-grade Django services.",
       "Focused on backend delivery and testing.",
@@ -15,7 +15,7 @@ const timeline = [
   {
     title: "Hackathons & fast builds",
     subtitle: "Rapid product workflow",
-    period: "2024–present",
+    period: "2025–present",
     details: [
       "Delivered prototypes in weekend sprints.",
       "Balanced UX clarity with backend stability.",

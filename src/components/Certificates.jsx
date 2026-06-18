@@ -4,11 +4,13 @@ import "./Certificates.css";
 // Import certificate images
 import alxCert from "../assets/Web_dev.png";
 import djangoCert from "../assets/proffesional_foundations.png";
+import hackatonCert from "../assets/hackathon.jpg";
 
 function Certificates() {
   const certificates = [
     { title: "ALX Software Engineering", img: alxCert },
     { title: "ALx Professional Foundations ", img: djangoCert },
+    { title: "University Hackathon ", img: hackatonCert },
     // add more if needed
   ];
 
