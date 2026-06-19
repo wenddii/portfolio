@@ -1,29 +1,38 @@
-import { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
 
-function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
+const links = [
+  { label: "Journey", href: "#journey" },
+  { label: "Work", href: "#projects" },
+  { label: "Focus", href: "#focus" },
+  { label: "Life", href: "#beyond" },
+  { label: "Vision", href: "#vision" },
+  { label: "Contact", href: "#contact" },
+];
 
+function Navbar({ theme, onToggleTheme }) {
   return (
-    <nav className="navbar">
-      <h2 className="logo">Wendwosen</h2>
+    <header className="navbar">
+      <a className="brand" href="#intro">
+        Wendwosen
+      </a>
 
-      {/* Hamburger Icon */}
-      <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
-        {menuOpen ? <FaTimes /> : <FaBars />}
-      </div>
+      <nav className="nav-links" aria-label="Primary">
+        {links.map((link) => (
+          <a key={link.href} href={link.href}>
+            {link.label}
+          </a>
+        ))}
+      </nav>
 
-      {/* Navigation Links */}
-      <ul className={menuOpen ? "nav-links active" : "nav-links"}>
-        <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
-        <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
-        <li><a href="#extracurriculars" onClick={() => setMenuOpen(false)}>Activities</a></li>
-        <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
-        <li><a href="#resume" onClick={() => setMenuOpen(false)}>resume</a></li>
-        <li><a href="#certificates" onClick ={() => setMenuOpen(false)}>Certificates</a></li>
-      </ul>
-    </nav>
+      <button
+        type="button"
+        className="theme-toggle"
+        onClick={onToggleTheme}
+        aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+      >
+        {theme === "dark" ? "Light" : "Dark"}
+      </button>
+    </header>
   );
 }
 
