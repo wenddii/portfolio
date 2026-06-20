@@ -15,7 +15,7 @@ const journey = [
     title: "Basketball came first",
     meta: "Before tech",
     description:
-      "For a long time, I only wanted basketball. It was the dream I was chasing until a knee injury changed the direction of my story.",
+      "For a long time, I only wanted basketball. It was the dream I was chasing until a knee injury changed the direction of my story and the fact that i couldn't get a visa to america to pursue my dreams.",
   },
   {
     title: "A creative detour",
@@ -39,7 +39,7 @@ const journey = [
     title: "Built my first real client system",
     meta: "Work that shipped",
     description:
-      "I collaborated with a friend to build an ERP system for my brother’s mini market, and it is still working in the shop.",
+      "I collaborated with a friend to build a real erp system to sell it to local businesses, and it is still working in the shop.",
   },
   {
     title: "Now in Addis, looking for internship opportunities",
@@ -131,12 +131,12 @@ const beyondCoding = ["Basketball", "Reading", "Building businesses", "Learning"
 const visualStory = [
   {
     title: "The basketball chapter",
-    caption: "The first dream was on the court. Injury changed the route, not the ambition.",
+    caption: "i am still a member in our schools basketball team. this photo was taken in Jimma university for the universities sport festival.",
     image: "/club1.jpg",
   },
   {
     title: "School clubs and teams",
-    caption: "I kept showing up in clubs and team spaces where discipline and collaboration mattered.",
+    caption: "this photo shows me and Batch(ባች) club members,in this club we organize events related to church this photo was taken when we had a yearly trip to tana monastries..",
     image: "/club2.jpg",
   },
   {
@@ -146,7 +146,7 @@ const visualStory = [
   },
   {
     title: "Learning in public",
-    caption: "My YouTube space stays part of the story, because documenting the journey matters too.",
+    caption: "i used to make videos for students who wanted to apply to scholarships and other opportunities,now i am focused on documenting my journey.",
     image: "/youtube.jpg",
     link: "https://youtu.be/2w-9-nCaWrQ?si=Vf9RZYVB8-hvnWWP",
   },
@@ -289,7 +289,6 @@ function App() {
         <section id="story-photos" className="story-section">
           <div className="section-head">
             <p className="eyebrow">Story in Photos</p>
-            <h2>A visual summary of where the journey has been.</h2>
             <p>
               These photos show the parts of my life that shaped the way I think, build, and show up.
             </p>
