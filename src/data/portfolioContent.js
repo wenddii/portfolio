@@ -127,26 +127,31 @@ export const visualStory = [
   {
     title: "The basketball chapter",
     caption:
-      "i am still a member in our schools basketball team. this photo was taken in Jimma university for the universities sport festival.",
+      "i am a member of my university basketball team and the photo was taken in jimma university for students sport festival",
     image: "/club1.jpg",
   },
   {
     title: "School clubs and teams",
     caption:
-      "this photo shows me and Batch(ባች) club members,in this club we organize events related to church this photo was taken when we had a yearly trip to tana monastries..",
+      "i particitpate in batch club(ባች) in school where we organize events related to church,this photo was taken in our yearly trip to tana monatstries.",
     image: "/club2.jpg",
   },
   {
     title: "The creative season",
-    caption: "Before tech, I spent time in content creation, editing, design, and sound.",
+    caption: "before tech i used to do photography,music production,video editing",
     image: profilePic,
   },
   {
     title: "Learning in public",
-    caption:
-      "i used to make videos for students who wanted to apply to scholarships and other opportunities,now i am focused on documenting my journey.",
+    caption: "i create youtube videos to document my journey",
     image: "/youtube.jpg",
     link: "https://youtu.be/2w-9-nCaWrQ?si=Vf9RZYVB8-hvnWWP",
   },
+  {
+    title: "Church course graduation",
+    caption: "this is a 2 month church course,the photo was taken in my graduation",
+    image: "/church-graduation.jpg",
+  },
 ];
+
 
