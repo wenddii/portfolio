@@ -1,0 +1,129 @@
+.contact-layout {
+  display: grid;
+  gap: 18px;
+}
+
+.contact-section {
+  padding-bottom: 90px;
+}
+
+.enquiry-form,
+.contact-links-panel {
+  border: 1px solid var(--border-subtle);
+  background: var(--surface);
+  border-radius: 24px;
+  padding: 20px;
+}
+
+.enquiry-form {
+  display: grid;
+  gap: 14px;
+}
+
+.enquiry-form label {
+  display: grid;
+  gap: 8px;
+}
+
+.enquiry-form span {
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.enquiry-form input,
+.enquiry-form textarea {
+  width: 100%;
+  border: 1px solid var(--border-subtle);
+  background: transparent;
+  color: var(--foreground);
+  border-radius: 16px;
+  padding: 0.95rem 1rem;
+  font: inherit;
+  resize: vertical;
+}
+
+.enquiry-form input::placeholder,
+.enquiry-form textarea::placeholder {
+  color: var(--muted);
+}
+
+.enquiry-form input:focus,
+.enquiry-form textarea:focus {
+  outline: none;
+  border-color: var(--border-strong);
+}
+
+.enquiry-actions {
+  display: grid;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.contact-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  border-radius: 999px;
+  padding: 0.85rem 1.2rem;
+  background: var(--foreground);
+  color: var(--background);
+  border: 1px solid transparent;
+  font: inherit;
+  cursor: pointer;
+}
+
+.contact-note,
+.contact-success {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.contact-success {
+  color: var(--foreground);
+}
+
+.contact-error {
+  font-size: 0.95rem;
+  color: #b45309;
+}
+
+.contact-links-panel {
+  display: grid;
+  gap: 12px;
+}
+
+.contact-link,
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  border-radius: 999px;
+  border: 1px solid var(--border-subtle);
+  background: var(--surface);
+  color: var(--foreground);
+  text-decoration: none;
+}
+
+.contact-link {
+  padding: 0.85rem 1.1rem;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.contact-link:hover,
+.contact-link:focus-visible {
+  transform: translateY(-1px);
+  border-color: var(--border-strong);
+  outline: none;
+}
+
+@media (min-width: 720px) {
+  .contact-layout {
+    grid-template-columns: minmax(0, 1fr) 260px;
+    align-items: start;
+  }
+}
+
